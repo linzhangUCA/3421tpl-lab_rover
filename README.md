@@ -14,6 +14,9 @@ R1B shared this information to its trustworthy human partner, you, and is waitin
 
 ## Requirements
 
+- Complete [Documentation](#documentation) to show off your designs.
+- Upload scripts controlling the robot to this repository.
+
 ### 1. (15%) Mechanical Design
 
 - (7%) Technical drawing of the robot base.
@@ -21,13 +24,20 @@ R1B shared this information to its trustworthy human partner, you, and is waitin
 - (3%) Technical drawing of the driving wheel.
 - (2%) Technical drawing of the caster wheel.
 
+> [!TIP]
+>
+> - People are supposed to follow these drawing to replicate an identical physical structure of the robot.
+> - Please refer to the [image insertion guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
+
 ### 2. (10%) Electrical Design
 
 - (7%) Diagram of signal wire connections in-between Pico, motor driver, motors, encoders, distance sensors and other sensors.
 - (3%) Wiring diagram for all electrical components.
 
 > [!TIP]
-> You can use one diagram for all.
+>
+> - You can use one diagram for all.
+> - People are supposed to follow these diagrams to get the electrical components to work.
 
 ### 3. (10%) Software Design
 
@@ -44,20 +54,31 @@ R1B shared this information to its trustworthy human partner, you, and is waitin
 - While your robot is running, use Green LED's brightness to indicate distance sensor's detection.
 - **The robot's behavior will only be regulated by the referenced linear and angular velocities**.
 
+### 5
+
 ![layout](link)
 
 ## Documentation
 
-#### Wiring Diagram
->
-> Please refer to the [image insertion guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
+### Mechanical Designs
 
-![wiring](link)
+#### Base Tech Draw
 
-#### Mechanical Layout Diagram
->
-> Please refer to the [image insertion guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
+![base_tech_draw](base_tech_draw.jpg)
 
-#### Approach
+#### Motor Bracket Tech Draw
+
+![motor_bracket_tech_draw](motor_bracket_tech_draw.jpg)
+
+#### Driving Wheel Tech Draw
+
+![drive_wheel_tech_draw](drive_wheel_tech_draw.jpg)
+
+#### Caster Wheel Tech Draw
+
+![caster_tech_draw](caster_tech_draw.jpg)
+
+### Electrical Designs
+
+### Software Designs
 >
-> Please refer to the [Math expression guide](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
