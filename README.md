@@ -9,6 +9,8 @@ The good news is, on the way to the sampling site, R1B memorized the surrounding
 R1B shared this information to its trustworthy human partner, you.
 Now, it is waiting on a reliable plan to start the journey back home.
 
+![lab_nav](images/lab_nav.jpg)
+
 ## Requirements
 
 Your robot needs to autonomously navigate out of the LSCA 105. The navigation is broken down into 3 stages. In each stage, the robot relies on one or two sensors to make right movement.
