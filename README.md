@@ -54,7 +54,7 @@ R1B shared this information to its trustworthy human partner, you, and is waitin
 - While your robot is running, use Green LED's brightness to indicate distance sensor's detection.
 - **The robot's behavior will only be regulated by the referenced linear and angular velocities**.
 
-### 5
+### 5. (5%) Broader Impact
 
 ![layout](link)
 
@@ -80,5 +80,6 @@ R1B shared this information to its trustworthy human partner, you, and is waitin
 
 ### Electrical Designs
 
+![wiring](wiring.jpg)
+
 ### Software Designs
->
