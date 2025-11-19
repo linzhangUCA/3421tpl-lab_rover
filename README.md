@@ -24,8 +24,7 @@ R1B shared this information to its trustworthy human partner, you, and is waitin
 > - Entering the "Danger Zones" will terminate the navigation.
 > - The distance between the navigation ending location and the "Home Base" will be the dominating metric to evaluate the quality of the navigation.
 See [coding requirements](#5-60-coding) below for more details.
-> - Traveling in-between the "Tracks" is highly recommended (5% bonus if the robot can do so).
-> - Finish the autonomous navigation inside of "Home Base" will result in 30% **bonus** points.
+> - **Big reward** is awaiting at the "Home Base".
 
 ## Requirements
 
@@ -69,8 +68,10 @@ See [coding requirements](#5-60-coding) below for more details.
 >
 > - Use the RGB LED on the board to indicate the functionality of the components.
 > - **ONLY** (initialization is exceptional) `set_vels()` from [diff_drive_controller.py](https://github.com/linzhangUCA/r1b_control/blob/main/upython_scripts/diff_drive_controller.py) or an equivalent function is allowed to drive the robot.
-> - If the robot failed to finish the navigation inside of the "Home Base", and $d$ (in meters) is the distance between the navigation ending location and the "Home Base". $30% \times d / 15 $ points will be taken off.
-> - If the robot finished inside of the "Home Base", 30% **bonus** points will be given.
+> - If the robot failed to finish the navigation inside of the "Home Base", and $d$ (in meters) is the distance between the navigation ending location and the "Home Base". $30% \cdot d / 15 $ points will be taken off.
+> - If the navigation finished inside of the "Home Base", 30% **bonus** points will be given.
+> - Traveling in-between the "Tracks" is highly recommended (5% bonus if the robot can do so).
+> - You are welcome to add components (sensors, actuators, decorations, etc.) to the robot.
 
 ## Documentation
 >
