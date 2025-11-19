@@ -45,7 +45,7 @@ See [coding requirements](#5-60-coding) below for more details.
 
 > [!TIP]
 >
-> - You can use one diagram for all.
+> You can use one diagram for all.
 
 ### 3. (10%) Software Design
 
@@ -75,6 +75,7 @@ See [coding requirements](#5-60-coding) below for more details.
 
 ## Documentation
 >
+> [!TIP]
 > Please refer to Github's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Mechanical Designs
