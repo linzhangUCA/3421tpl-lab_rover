@@ -49,7 +49,7 @@ Wire up all the electrical and electronics components.
 - (?%) Describe the logic of the navigation using a list of steps, or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
 - (**?% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
 
-### 3.4. (60%) Coding
+### 3.4. Coding (60% Base + Bonus)
 1. (?%) Initialization (System Check).
    - (?%) On power-up, verify sensors are functional.
      - Button GPIO pin reads its configured default resting logic level (0 for PULL_DOWN, 1 for PULL_UP)
@@ -59,22 +59,38 @@ Wire up all the electrical and electronics components.
      - Spin mobile base exactly 90 degrees CCW or CW in place, then spin it back (to also verify the encoders are functional)
      - Spin servo (if applied) exactly 90 degrees CCW or CW, then spin it back.
    - If all of the above conditions are met, blink all status LEDs simultaneously at 5 Hz for 2 seconds.
+   - Automatically transition into `PAUSE` mode upon successful self-test completion.
  > [!IMPORTANT]
  > If any initialization check fails, the robot **must not** proceed to active navigation.
-- (5%) Initialize the robot by checking all the sensors and actuators are functional.
-- (10%) While your robot is running, use **green** LED's brightness to indicate distance sensor's detection.
-- (10%) Regulate your robot's behavior by proposing reference linear and angular velocities **only** (not required for initialization).
-- (5%) Light up **red** LED and keep it on after the navigation is done.
-- (30%) Navigation code.
+
+2. (3%) When `PAUSE` mode is activated:
+  - (1%) Stop all actuators.
+  - (1%) Modulate the $\color{green}\text{green}$ LED with a breathing/fading effect at 1 Hz (allocating equal duration to fade-in and fade-out cycles).
+  - (1%) Switch to `WORK` mode at the moment the tactile button is **released**.
+
+3. (3%) When `WORK` mode is activated:
+  - (1%) Solid $\color{green}\text{green}$ LED continuously lit.
+  - (?%) Calculate reasonable velocity commands based on the sensors' measurements to guide your robot navigating towards the goal. 
+  - (1%) Switch to `PAUSE` mode at the moment the tactile button is **released**.
+
+4. (?%) Terminate the navigation if the robot thinks it reached the destination.
+   Lit solid $\color{purple}\text{purple}$ to indicate end of journey.  
+
+- (**?% Bonus**) Adjust brightness of the LEDs and behavior of the robot based on the battery voltage.
+  - For 8.4 V and above: only $\color{green}\text{green}$ LED with full brightness
+  - From 7.4 V to 8.4 V: $\color{green}\text{green}$ LED brightness from 50% to maximum, while $\color{red}\text{red}$ LED brightness from 50% to 0.
+  - From 6.4 V to 7.4 V: $\color{green}\text{green}$ LED brightness from 0 to 50%, while $\color{red}\text{red}$ LED brightness from maximum to 50%.
+  - Shut down the system/robot if battery voltage fell below 6.4 V.
+
+- (**?% Bonus**) Implement proposed sensor fusion approach as described in [Section 3.3.](#3.3.-software-design-10-base-+-bonus). 
+
 
 > [!IMPORTANT]
 >
-> - Use the RGB LED on the board to indicate the functionality of the components.
-> - **ONLY** (initialization is exceptional) `set_vels()` from [diff_drive_controller.py](https://github.com/linzhangUCA/r1b_control/blob/main/upython_scripts/diff_drive_controller.py) or an equivalent function is allowed to drive the robot.
 > - If the robot failed to finish the navigation inside of the "Home Base", and $d$ (in meters) is the distance between the navigation ending location and the "Home Base". $30 - d /0.46$ points will be will be given to the navigation coding.
 > - If the navigation finished inside of the "Home Base", 30% **bonus** points will be given.
 > - Traveling in-between the "Tracks" is highly recommended (5% bonus if the robot can do so).
-> - You are welcome to add components (sensors, actuators, decorations, etc.) to the robot.
+> - You have the freedom to configure your robot to fulfill the requirements.
 
 ## Documentation
 >
