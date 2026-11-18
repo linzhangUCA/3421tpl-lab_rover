@@ -56,12 +56,8 @@ Wire up all the electrical and electronics components.
 - (?%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
 - (**?% Bonus**) Self-Soldered PCB of TBot control relay.
 
-### 3.3. Software Design (10% Base + Bonus)
-- (?%) Describe the logic of the navigation using a list of steps, or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
-- (**?% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
-
-### 3.4. Coding (60% Base + Bonus)
-1. (?%) Initialization (System Check).
+### 3.3. Coding (60% Base + Bonus)
+#### 3.3.1. (?%) Initialization (System Check).
    - (?%) On power-up, verify sensors are functional.
      - Button GPIO pin reads its configured default resting logic level (0 for PULL_DOWN, 1 for PULL_UP)
      - Ultrasonic sensor (if applied) returns a non-zero, valid distance reading.
@@ -74,17 +70,17 @@ Wire up all the electrical and electronics components.
  > [!IMPORTANT]
  > If any initialization check fails, the robot **must not** proceed to active navigation.
 
-2. (3%) When `PAUSE` mode is activated:
+#### 3.3.2. (3%) When `PAUSE` mode is activated:
   - (1%) Stop all actuators.
   - (1%) Modulate the $\color{green}\text{green}$ LED with a breathing/fading effect at 1 Hz (allocating equal duration to fade-in and fade-out cycles).
   - (1%) Switch to `WORK` mode at the moment the tactile button is **released**.
 
-3. (3%) When `WORK` mode is activated:
+#### 3.3.3. (3%) When `WORK` mode is activated:
   - (1%) Solid $\color{green}\text{green}$ LED continuously lit.
   - (?%) Calculate reasonable velocity commands based on the sensors' measurements to guide your robot navigating towards the goal. 
   - (1%) Switch to `PAUSE` mode at the moment the tactile button is **released**.
 
-4. (?%) Terminate the navigation if the robot thinks it reached the destination.
+#### 3.3.4. (?%) Terminate the navigation if the robot thinks it reached the destination.
    Lit solid $\color{purple}\text{purple}$ to indicate end of journey.  
 
 - (**?% Bonus**) Adjust brightness of the LEDs and behavior of the robot based on the battery voltage.
@@ -96,35 +92,30 @@ Wire up all the electrical and electronics components.
 - (**?% Bonus**) Implement proposed sensor fusion approach as described in [Section 3.3.](#3.3-software-design-10-base-+-bonus). 
 
 
-## Documentation
->
-> [!TIP]
-> Please refer to Github's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### 3.4. Documentation (10% Base)
+> [!CAUTION]
+> All project documentation must be committed directly to your repository's root [README.md](README.md) file.
 
-### Mechanical Designs
+#### 3.4.1. (?%) Illustrate mechanical designs
+- Display the portrait of your robot with resolution of 800 px. by 600 px..
+- Display all the mechanical drawings with resolution of 1200 px. by 900 px..
 
-#### Base Tech Draw
+#### 3.4.2. (?%) Wiring diagrams
+- Display the wiring diagram of the **power streams** with a resolution of 800 px. by 600 px..
+- Display the wiring diagram of the **signal streams** with a resolution of 800 px. by 600 px..
 
-![base_tech_draw](base_tech_draw.jpg)
+#### 3.4.3. (?%) Algorithm
+- (?%) Describe the logic of the navigation using an [itemized list]((https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists)), or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
+- (**?% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
 
-#### Motor Bracket Tech Draw
+#### 3.4.4. (1%) Acknowledge AI's contributions 
+Please list out all the AI's contributions to this project.
 
-![motor_bracket_tech_draw](motor_bracket_tech_draw.jpg)
-
-#### Driving Wheel Tech Draw
-
-![drive_wheel_tech_draw](drive_wheel_tech_draw.jpg)
-
-#### Caster Wheel Tech Draw
-
-![caster_tech_draw](caster_tech_draw.jpg)
-
-### Electrical Designs
-
-![wiring](wiring.jpg)
-
-### Software Designs
-
-![algorithm](algorithm.jpg)
-
-### Broader Impact
+## 4. Resources
+- [Differential driver controller examples](https://github.com/linzhangUCA/3421example-differential_drive_controller).
+- [Distance sensor examples](https://github.com/linzhangUCA/3421example-ultrasonic_sensor).
+- [IMU examples](https://github.com/linzhangUCA/3421example-inertial_measurement_unit).
+- [Servo control examples](https://github.com/linzhangUCA/3421example-servo).
+- [Reference Mechanical Design: tbot_mechanical](https://github.com/linzhangUCA/tbot_mechanical).
+- [Reference Electrical Design: tbot_mechanical](https://github.com/linzhangUCA/tbot_electrical).
+- [Sensor Fusion](https://youtu.be/0rlvvYgmTvI?si=u2gn0NF3f4oAkx-W)
