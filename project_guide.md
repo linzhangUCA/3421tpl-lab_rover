@@ -33,17 +33,17 @@ See [coding requirements](#5-60-coding) below for more details.
 - Complete [Documentation](#documentation) and describe your designs.
 - Upload your robot controlling scripts to this repository.
 
-### 1. (15%) Mechanical Design
-- Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
+### 1. Mechanical Design & Implementation (15% Base) 
+- (?%) Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
   Try to reveal as many key components as possible.
-- Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
+- (?%) Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
   - Dimensions of the key components (base, wheels, circuit boards, **payload storage**, etc.).
   - Locations and layout of of the key components.
 
-### 2. (10%) Electrical Design
-
-- (7%) Diagram of signal wire connections in-between Pico, motor driver, motors, encoders, distance sensors and other sensors.
-- (3%) Wiring diagram for all electrical components.
+### 2. Electrical Design & Practice (10% Base + Bonus)
+Wire up all the electrical and electronics components.
+- (?%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
+- (**+?% Bonus**) Self-Soldered PCB of TBot control relay.
 
 ### 3. (10%) Software Design
 
