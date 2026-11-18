@@ -33,7 +33,7 @@ See [coding requirements](#5-60-coding) below for more details.
 - Complete [Documentation](#documentation) and describe your designs.
 - Upload your robot controlling scripts to this repository.
 
-### 1. Mechanical Design & Implementation (15% Base) 
+### 1. Mechanical Design & Implementation (15% Base)
 - (?%) Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
   Try to reveal as many key components as possible.
 - (?%) Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
@@ -43,11 +43,11 @@ See [coding requirements](#5-60-coding) below for more details.
 ### 2. Electrical Design & Practice (10% Base + Bonus)
 Wire up all the electrical and electronics components.
 - (?%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
-- (**+?% Bonus**) Self-Soldered PCB of TBot control relay.
+- (**?% Bonus**) Self-Soldered PCB of TBot control relay.
 
-### 3. (10%) Software Design
-
-- Describe the navigation logic of the navigation using a list of steps, or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
+### 3. Software Design (10% Base + Bonus)
+- (?%) Describe the logic of the navigation using a list of steps, or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
+- (**?% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
 
 ### 4. (5%) Broader Impact
 
