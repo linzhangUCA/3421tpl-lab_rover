@@ -33,29 +33,34 @@ See [coding requirements](#5-60-coding) below for more details.
 - Complete [Documentation](#documentation) and describe your designs.
 - Upload your robot controlling scripts to this repository.
 
-### 1. Mechanical Design & Implementation (15% Base)
+### 3.1. Mechanical Design & Implementation (15% Base)
 - (?%) Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
   Try to reveal as many key components as possible.
 - (?%) Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
   - Dimensions of the key components (base, wheels, circuit boards, **payload storage**, etc.).
   - Locations and layout of of the key components.
 
-### 2. Electrical Design & Practice (10% Base + Bonus)
+### 3.2. Electrical Design & Practice (10% Base + Bonus)
 Wire up all the electrical and electronics components.
 - (?%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
 - (**?% Bonus**) Self-Soldered PCB of TBot control relay.
 
-### 3. Software Design (10% Base + Bonus)
+### 3.3. Software Design (10% Base + Bonus)
 - (?%) Describe the logic of the navigation using a list of steps, or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
 - (**?% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
 
-### 4. (5%) Broader Impact
-
-- (2%) Please briefly state the future or possible applications of this robot.
-- (3%) Please discuss broader impacts of this robot with consideration of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors.
-
-### 5. (60%) Coding
-
+### 3.4. (60%) Coding
+1. (?%) Initialization (System Check).
+   - (?%) On power-up, verify sensors are functional.
+     - Button GPIO pin reads its configured default resting logic level (0 for PULL_DOWN, 1 for PULL_UP)
+     - Ultrasonic sensor (if applied) returns a non-zero, valid distance reading.
+     - IMU (if applied) returns non-zero, reasonable motion data.
+   - (?%) Verify actuators are functional.
+     - Spin mobile base exactly 90 degrees CCW or CW in place, then spin it back (to also verify the encoders are functional)
+     - Spin servo (if applied) exactly 90 degrees CCW or CW, then spin it back.
+   - If all of the above conditions are met, blink all status LEDs simultaneously at 5 Hz for 2 seconds.
+ > [!IMPORTANT]
+ > If any initialization check fails, the robot **must not** proceed to active navigation.
 - (5%) Initialize the robot by checking all the sensors and actuators are functional.
 - (10%) While your robot is running, use **green** LED's brightness to indicate distance sensor's detection.
 - (10%) Regulate your robot's behavior by proposing reference linear and angular velocities **only** (not required for initialization).
