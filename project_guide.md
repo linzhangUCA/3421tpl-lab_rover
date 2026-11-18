@@ -17,27 +17,28 @@ Reference map for the navigation:
 ### 2.1. Procedure
 1. Initialization and self-check.
 2. Receive the payload ("Element M2-5", a.k.a. **M2.5 nut**)
-3. Set robot behind the "Start Line" at any compfortable location and heading angle.
+3. Set robot behind the "Start Line" at any location and heading angle.
 4. Let the robot autonomously navigate towards the destination.
 5. $\color{purple}\text{Terminate}$ the navigation when the robot thinks it is done.
 
 
 > [!IMPORTANT]
-> ### Rules
-> - If the robot failed to finish the navigation inside of the "Home Base", and $d$ (in meters) is the distance between the navigation ending location and the "Home Base". $30 - d /0.46$ points will be will be given to the navigation coding.
-> - If the navigation finished inside of the "Home Base", 30% **bonus** points will be given.
-> - Traveling in-between the "Tracks" is highly recommended (5% bonus if the robot can do so).
-> - You have the freedom to configure your robot to fulfill the requirements.
-> - Avoid the "Danger Zones", and finish inside (or as close as possible to) the "Home Base".
-> - Indicate the autonomous navigation is finished ($\color{purple}\text{purple}$ light).
+> ### 2.2. Rules
+> - Each student can attempt up to 3 times in total.
+>   The student with fewer attempts has higher priority in the queque.
+> - A navigation trial will be considered as successful if the robot terminate inside of the "Home Base" as shown in the map below.
+> - Entering the "Danger Zones" will lead to disqualification of the attempt.
+>   The location where the robot enters the "Danger Zone" will be counted as the end of navigation location.
+> - Human intervention after the robot crossed over the "Start Line" will disqualify the current attempt.
+>   The location where the human physically contact the robot will be counted as the end of navigation location.
+> - (**25% Bonus**)The robot needs to navigate to the deeper half of the "Home Base" to claim a 25% **bonus** points.
+> - (**Up to %40 Penalty**) If the robot failed to finish the navigation in the "Home Base", the distance, $d$ (in meters), will be measured between the navigation ending location and the nearest point on the entry line of the "Home Base".
+>   $max(-40, -10d)$% points will be taken as the penalty.
+> - Only the highest scored trial will be kept.  
+> - The robot traveling in-between the "Rails" can claim a 5% bonus points.
+>   At least one wheel needs to on the track.
+> - Only encoders and the DC motors are required, students have the freedom to employ other sensors and actuators.
 
-> [!CAUTION]
->
-> - Human intervention will terminate the navigation after the robot crossed over the "Start Line".
-> - Entering the "Danger Zones" will terminate the navigation.
-> - The distance between the navigation ending location and the "Home Base" will be the dominating metric to evaluate the quality of the navigation.
-See [coding requirements](#5-60-coding) below for more details.
-> - **Big reward** is awaiting at the "Home Base".
 
 ## 3. Requirements
 - Complete [Documentation](#documentation) and describe your designs.
