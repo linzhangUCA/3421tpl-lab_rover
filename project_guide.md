@@ -3,7 +3,7 @@
 > ## $\color{#582c83}\text{Demonstration Due: Thursday, Dec. 10th @ 1 PM}$
 > ## $\color{#582c83}\text{Submission Due: Thursday, Dec. 10th @ 5 PM}$
 
-## Background Story
+## 1. Background Story
 
 On the surface of the planet LEDG-100c, our brave rover TBot has successfully secured a volatile sample of "Element M2-5", a crucial resource to build planetary engines.
 Now begins the perilous return journey to the Base Station, a navigation challenge that would fry the circuits of lesser bots.
@@ -11,7 +11,7 @@ TBot must traverse the extraterrestrial terrain, relying on its sensors to diffe
 The good news is, on the way to the sampling site, TBot memorized the surrounding environment and made a map.
 TBot shared this information to its trustworthy human partner, you, and is waiting on a reliable plan to start the journey back home.
 
-## Autonomous Navigation Procedure
+## 2. Autonomous Navigation Procedure
 
 ![lab_nav](./assets/images/lab_nav.jpg)
 
@@ -29,17 +29,16 @@ TBot shared this information to its trustworthy human partner, you, and is waiti
 See [coding requirements](#5-60-coding) below for more details.
 > - **Big reward** is awaiting at the "Home Base".
 
-## Requirements
-
+## 3. Requirements
 - Complete [Documentation](#documentation) and describe your designs.
 - Upload your robot controlling scripts to this repository.
 
 ### 1. (15%) Mechanical Design
-Design a payload storage for the M2.5 nut 
-- (7%) Technical drawing of the robot base.
-- (3%) Technical drawing of the motor bracket.
-- (3%) Technical drawing of the driving wheel.
-- (2%) Technical drawing of the caster wheel.
+- Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
+  Try to reveal as many key components as possible.
+- Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
+  - Dimensions of the key components (base, wheels, circuit boards, **payload storage**, etc.).
+  - Locations and layout of of the key components.
 
 ### 2. (10%) Electrical Design
 
