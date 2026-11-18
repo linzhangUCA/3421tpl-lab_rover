@@ -11,16 +11,15 @@ TBot must traverse the extraterrestrial terrain, relying on its sensors to diffe
 The good news is, on the way to the sampling site, TBot memorized the surrounding environment and made a map.
 TBot shared this information to its trustworthy human partner, you, and is waiting on a reliable plan to start the journey back home.
 
+
 ## 2. Autonomous Navigation Demonstration (Bonus/Penalty)
-Reference map for the navigation:
-![lab_nav](./assets/images/lab_nav.jpg)
+
 ### 2.1. Procedure
 1. Initialization and self-check.
 2. Receive the payload ("Element M2-5", a.k.a. **M2.5 nut**)
 3. Set robot behind the "Start Line" at any location and heading angle.
 4. Let the robot autonomously navigate towards the destination.
 5. $\color{purple}\text{Terminate}$ the navigation when the robot thinks it is done.
-
 
 > [!IMPORTANT]
 > ### 2.2. Rules
@@ -39,10 +38,13 @@ Reference map for the navigation:
 >   At least one wheel needs to on the track.
 > - Only encoders and the DC motors are required, students have the freedom to employ other sensors and actuators.
 
+Reference map for the navigation:
+![lab_nav](./assets/images/lab_nav.jpg)
+
 
 ## 3. Requirements
-- Complete [Documentation](#documentation) and describe your designs.
-- Upload your robot controlling scripts to this repository.
+> [!CAUTION]
+> - A live demonstration is required to redeem the points below.
 
 ### 3.1. Mechanical Design & Implementation (15% Base)
 - (?%) Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
@@ -83,13 +85,13 @@ Wire up all the electrical and electronics components.
 #### 3.3.4. (?%) Terminate the navigation if the robot thinks it reached the destination.
    Lit solid $\color{purple}\text{purple}$ to indicate end of journey.  
 
-- (**?% Bonus**) Adjust brightness of the LEDs and behavior of the robot based on the battery voltage.
+- (**?% Bonus**) Adjust brightness of the LEDs and behavior of the robot based on the battery voltage (apply to `WORK` mode).
   - For 8.4 V and above: only $\color{green}\text{green}$ LED with full brightness
   - From 7.4 V to 8.4 V: $\color{green}\text{green}$ LED brightness from 50% to maximum, while $\color{red}\text{red}$ LED brightness from 50% to 0.
   - From 6.4 V to 7.4 V: $\color{green}\text{green}$ LED brightness from 0 to 50%, while $\color{red}\text{red}$ LED brightness from maximum to 50%.
   - Shut down the system/robot if battery voltage fell below 6.4 V.
 
-- (**?% Bonus**) Implement proposed sensor fusion approach as described in [Section 3.3.](#3.3-software-design-10-base-+-bonus). 
+- (**?% Bonus**) Implement sensor fusion algorithm to better estimate robot's motion status. 
 
 
 ### 3.4. Documentation (10% Base)
