@@ -11,15 +11,25 @@ TBot must traverse the extraterrestrial terrain, relying on its sensors to diffe
 The good news is, on the way to the sampling site, TBot memorized the surrounding environment and made a map.
 TBot shared this information to its trustworthy human partner, you, and is waiting on a reliable plan to start the journey back home.
 
-## 2. Autonomous Navigation Procedure
-
+## 2. Autonomous Navigation Demonstration (Bonus/Penalty)
+Reference map for the navigation:
 ![lab_nav](./assets/images/lab_nav.jpg)
+### 2.1. Procedure
+1. Initialization and self-check.
+2. Receive the payload ("Element M2-5", a.k.a. **M2.5 nut**)
+3. Set robot behind the "Start Line" at any compfortable location and heading angle.
+4. Let the robot autonomously navigate towards the destination.
+5. $\color{purple}\text{Terminate}$ the navigation when the robot thinks it is done.
 
-1. Set the robot behind the "Start Line" and receive the payload ("Element M2-5", an M2.5 nut).
-2. Initialization and self-check.
-3. Start autonomous navigation (can be manually activated).
-4. Avoid the "Danger Zones", and finish inside (or as close as possible to) the "Home Base".
-5. Indicate the autonomous navigation is finished (red light).
+
+> [!IMPORTANT]
+> ### Rules
+> - If the robot failed to finish the navigation inside of the "Home Base", and $d$ (in meters) is the distance between the navigation ending location and the "Home Base". $30 - d /0.46$ points will be will be given to the navigation coding.
+> - If the navigation finished inside of the "Home Base", 30% **bonus** points will be given.
+> - Traveling in-between the "Tracks" is highly recommended (5% bonus if the robot can do so).
+> - You have the freedom to configure your robot to fulfill the requirements.
+> - Avoid the "Danger Zones", and finish inside (or as close as possible to) the "Home Base".
+> - Indicate the autonomous navigation is finished ($\color{purple}\text{purple}$ light).
 
 > [!CAUTION]
 >
@@ -82,15 +92,8 @@ Wire up all the electrical and electronics components.
   - From 6.4 V to 7.4 V: $\color{green}\text{green}$ LED brightness from 0 to 50%, while $\color{red}\text{red}$ LED brightness from maximum to 50%.
   - Shut down the system/robot if battery voltage fell below 6.4 V.
 
-- (**?% Bonus**) Implement proposed sensor fusion approach as described in [Section 3.3.](#3.3.-software-design-10-base-+-bonus). 
+- (**?% Bonus**) Implement proposed sensor fusion approach as described in [Section 3.3.](#3.3-software-design-10-base-+-bonus). 
 
-
-> [!IMPORTANT]
->
-> - If the robot failed to finish the navigation inside of the "Home Base", and $d$ (in meters) is the distance between the navigation ending location and the "Home Base". $30 - d /0.46$ points will be will be given to the navigation coding.
-> - If the navigation finished inside of the "Home Base", 30% **bonus** points will be given.
-> - Traveling in-between the "Tracks" is highly recommended (5% bonus if the robot can do so).
-> - You have the freedom to configure your robot to fulfill the requirements.
 
 ## Documentation
 >
