@@ -5,7 +5,7 @@
 
 ## 1. Background Story
 
-On the surface of the planet LEDG-100c, our brave rover TBot has successfully secured a volatile sample of "Element M2-5", a crucial resource to build planetary engines.
+On the surface of the planet LEDG-100n, our brave rover TBot has successfully secured a volatile sample of "Element M2-5", a crucial resource to build planetary engines.
 Now begins the perilous return journey to the Base Station, a navigation challenge that would fry the circuits of lesser bots.
 TBot must traverse the extraterrestrial terrain, relying on its sensors to differentiate between solid ground and deceptively steep cliffs.
 The good news is, on the way to the sampling site, TBot memorized the surrounding environment and made a map.
@@ -39,7 +39,7 @@ TBot shared this information to its trustworthy human partner, you, and is waiti
 > - Only encoders and the DC motors are required, students have the freedom to employ other sensors and actuators.
 
 Reference map for the navigation:
-![lab_nav](./assets/images/lab_nav.jpg)
+![lab_nav](./assets/images/lab_nav.png)
 
 
 ## 3. Requirements
