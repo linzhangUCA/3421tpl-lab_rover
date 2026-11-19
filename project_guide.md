@@ -12,7 +12,7 @@ The good news is, on the way to the sampling site, TBot memorized the surroundin
 TBot shared this information to its trustworthy human partner, you, and is waiting on a reliable plan to start the journey back home.
 
 
-## 2. Autonomous Navigation Demonstration (Bonus/Penalty)
+## 2. Autonomous Navigation Demonstration
 
 ### 2.1. Procedure
 1. Initialization and self-check.
@@ -22,7 +22,7 @@ TBot shared this information to its trustworthy human partner, you, and is waiti
 5. $\color{purple}\text{Terminate}$ the navigation when the robot thinks it is done.
 
 > [!IMPORTANT]
-> ### 2.2. Rules
+> ### 2.2. Rules (Bonus/Penalty)
 > - Each student can attempt up to 3 times in total.
 >   The student with fewer attempts has higher priority in the queque.
 > - A navigation trial will be considered as successful if the robot terminate inside of the "Home Base" as shown in the map below.
@@ -47,16 +47,16 @@ Reference map for the navigation:
 > - A live demonstration is required to redeem the points below.
 
 ### 3.1. Mechanical Design & Implementation (15% Base)
-- (?%) Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
+- (3%) Assemble your robot and upload a portrait picture (you pick the viewing angle) for your robot.
   Try to reveal as many key components as possible.
-- (?%) Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
+- (12%) Use _Top View_, _Side View_ and _Front View_ drawings to illustrate:
   - Dimensions of the key components (base, wheels, circuit boards, **payload storage**, etc.).
   - Locations and layout of of the key components.
 
 ### 3.2. Electrical Design & Practice (10% Base + Bonus)
 Wire up all the electrical and electronics components.
-- (?%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
-- (**?% Bonus**) Self-Soldered PCB of TBot control relay.
+- (10%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
+- (**5% Bonus**) Self-Soldered PCB of TBot control relay.
 
 ### 3.3. Coding (60% Base + Bonus)
 #### 3.3.1. (?%) Initialization (System Check).
@@ -93,20 +93,18 @@ Wire up all the electrical and electronics components.
 
 - (**?% Bonus**) Implement sensor fusion algorithm to better estimate robot's motion status. 
 
-
-### 3.4. Documentation (10% Base)
+### 3.4. Documentation (20% Base)
 > [!CAUTION]
 > All project documentation must be committed directly to your repository's root [README.md](README.md) file.
 
-#### 3.4.1. (?%) Illustrate mechanical designs
-- Display the portrait of your robot with resolution of 800 px. by 600 px..
-- Display all the mechanical drawings with resolution of 1200 px. by 900 px..
+#### 3.4.1. (8%) Illustrate mechanical designs
+- (2%) Display the portrait of your robot with resolution of 800 px. by 600 px..
+- (6%) Display all the mechanical drawings with resolution of 1200 px. by 900 px..
 
-#### 3.4.2. (?%) Wiring diagrams
-- Display the wiring diagram of the **power streams** with a resolution of 800 px. by 600 px..
-- Display the wiring diagram of the **signal streams** with a resolution of 800 px. by 600 px..
+#### 3.4.2. (4%) Wiring diagrams
+- Display the wiring diagram(s).
 
-#### 3.4.3. (?%) Algorithm
+#### 3.4.3. (10%) Algorithm
 - (?%) Describe the logic of the navigation using an [itemized list]((https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists)), or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
 - (**?% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
 
