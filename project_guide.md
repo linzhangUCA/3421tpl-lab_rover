@@ -114,10 +114,10 @@ Wire up all the electrical and electronics components.
 Please list out all the AI's contributions to this project.
 
 ## 4. Resources
-- [Differential driver controller examples](https://github.com/linzhangUCA/3421example-differential_drive_controller).
-- [Distance sensor examples](https://github.com/linzhangUCA/3421example-ultrasonic_sensor).
-- [IMU examples](https://github.com/linzhangUCA/3421example-inertial_measurement_unit).
-- [Servo control examples](https://github.com/linzhangUCA/3421example-servo).
-- [Reference Mechanical Design: tbot_mechanical](https://github.com/linzhangUCA/tbot_mechanical).
-- [Reference Electrical Design: tbot_mechanical](https://github.com/linzhangUCA/tbot_electrical).
-- [Sensor Fusion](https://youtu.be/0rlvvYgmTvI?si=u2gn0NF3f4oAkx-W)
+- [Differential driver controller examples code](https://github.com/linzhangUCA/3421example-differential_drive_controller).
+- [Distance sensor example code](https://github.com/linzhangUCA/3421example-ultrasonic_sensor).
+- [IMU example code](https://github.com/linzhangUCA/3421example-inertial_measurement_unit).
+- [Servo control example code](https://github.com/linzhangUCA/3421example-servo).
+- [Reference mechanical Design](https://github.com/linzhangUCA/tbot_mechanical).
+- [Reference electrical Design](https://github.com/linzhangUCA/tbot_electrical).
+- [Sensor fusion tutorial](https://youtu.be/0rlvvYgmTvI?si=u2gn0NF3f4oAkx-W)
