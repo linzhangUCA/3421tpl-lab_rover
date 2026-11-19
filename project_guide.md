@@ -58,7 +58,7 @@ Wire up all the electrical and electronics components.
 - (10%) Upload schematic(s) of wiring diagram depicting the power distribution and the signal networking.
 - (**5% Bonus**) Self-Soldered PCB of TBot control relay.
 
-#### 3.3. Algorithm (12% Base + Bonus)
+#### 3.3. Algorithm (10% Base + Bonus)
 - (10%) Describe the logic of the navigation using an [itemized list]((https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists)), or a [algorithm table](https://i.sstatic.net/6hfCG.png), or a [flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png).
 - (**10% Bonus**) Fuse the IMU measurement with the encoders'. Explain your sensor fusion approach with math language. 
 
@@ -97,7 +97,7 @@ Wire up all the electrical and electronics components.
 
 #### 3.4.6. (10% Bonus) Implement sensor fusion algorithm to better estimate robot's motion status. 
 
-### 3.5. Documentation (25% Base + Bonus)
+### 3.5. Documentation (15% Base + Bonus)
 > [!CAUTION]
 > All project documentation must be committed directly to your repository's root [README.md](README.md) file.
 
