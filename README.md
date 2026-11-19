@@ -7,7 +7,7 @@
 ## Portrait
 ![portrait](portrait_link)
 
-## Mechanical Drawing
+## Mechanical Drawings
 ![top_view](techdraw_link)
 
 ![side_view](techdraw_link)
@@ -17,7 +17,7 @@
 ## Electrical Designs
 ![wiring_diagram](diagram_link)
 
-## Algorithm
+## Algorithms
 > Reserved for formatted algorithm
 
 ## AI's Contribution
